@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Цвета */
+  --bg-primary: #0f0a0a;
+  --bg-secondary: #1a1212;
+  --bg-card: #221818;
+  --bg-card-hover: #2d1f1f;
+
+  --accent-primary: #c4715a;
+  --accent-secondary: #e8967a;
+  --accent-soft: #f2c4b0;
+  --accent-glow: rgba(196, 113, 90, 0.15);
+
+  --text-primary: #f5ede8;
+  --text-secondary: #c4a99e;
+  --text-muted: #7a5f58;
+
+  --border: rgba(196, 113, 90, 0.15);
+  --border-hover: rgba(196, 113, 90, 0.4);
+
+  --success: #7ec87e;
+  --danger: #e87070;
+  --warning: #e8c470;
+
+  /* Размеры */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  /* Тени */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+  --shadow-accent: 0 4px 20px rgba(196, 113, 90, 0.2);
+
+  /* Шрифт */
+  --font: 'Nunito', sans-serif;
+
+  /* Навигация */
+  --nav-height: 64px;
+}
