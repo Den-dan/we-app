@@ -51,6 +51,9 @@ async function createCouple() {
 
   await db.from('profiles').update({ couple_id: couple.id }).eq('id', user.id);
 
+  const { data: profile } = await db.from('profiles').select().eq('id', user.id).single();
+  window.currentUser = profile;
+
   alert(`Твой код приглашения: ${code}\nОтправь его партнёру!`);
   showMainApp();
 }
