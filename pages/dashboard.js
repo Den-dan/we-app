@@ -119,7 +119,25 @@ function moreMenuItem(icon, title, subtitle, onclick) {
 }
 
 // Заглушки для страниц из меню "Ещё" (заполним позже)
-function showQuestions() { alert('Скоро! 💬'); }
+function showQuestions() {
+  const el = document.getElementById('page-more');
+  el.innerHTML = `
+    <div class="fade-in">
+      <div style="display:flex; align-items:center; gap:12px; margin-bottom:24px; padding-top:8px;">
+        <button onclick="renderMore()" style="background:none; border:none; color:var(--text-secondary); cursor:pointer; padding:4px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15,18 9,12 15,6"/></svg>
+        </button>
+        <h2 class="page-title" style="margin:0;">Вопросы дня</h2>
+      </div>
+      <div id="questions-content"></div>
+      <div style="margin-top:2rem;">
+        <h3 style="margin-bottom:1rem; color:var(--text-secondary); font-size:14px;">Прошлые вопросы</h3>
+        <div id="past-questions"></div>
+      </div>
+    </div>
+  `;
+  loadQuestionsPage();
+}
 function showGratitude() { alert('Скоро! 🙏'); }
 function showFinances() { alert('Скоро! 💰'); }
 function showHealth() { alert('Скоро! 🏥'); }
